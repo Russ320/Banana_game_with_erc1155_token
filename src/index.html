@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana game  DApp</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        input, button {
+            margin: 5px ;
+            
+        }
+        
+        *{box-sizing: border-box;
+        }
+        
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        /* height: 300px; Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+        /* Create center class */
+        .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>ToDoList DApp</h1>
+    <div>
+        <img src="512fx512f.webp" alt = "Banana" class="center">
+        <button onclick="dropRandom()" class="center">Click</button>
+    </div>
+        
+    
+    <script type="text/javascript" src="../build/contracts/ToDoList.json"></script>
+    <script src="app.js"></script>
+</body>
+</html>
